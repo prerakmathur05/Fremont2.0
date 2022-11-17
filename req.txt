@@ -1,0 +1,21 @@
+ 
+Here you go some more feedback (According to Greg's comments)
+
+*News and Events*
+Please remove the small caps text and Add a h1 display1 display2 for 
+*News & Events* in color blue##259CF4
+
+*Map*
+Is it possible to have the map zoomed into the bay area?
+Please remove INTERACTIVE MAP and make Interactive Industry Map -> blue #259CF4
+
+*Manufacturing location Tool*
+Add display1 class to this class (so it does not look smaller on the mobile version)
+Please follow the mock with regards to texts (small caps vs all caps) 
+margins and white spaces
+
+*Company Assistance*
+Add display1 class to this class (so it does not look smaller on the mobile version)
+
+*Favicon*
+I will be providing a Favicon for this page tomorrow
