@@ -2955,10 +2955,13 @@ html.no-csstransitions .home-content__main {
 .form__child1{
     width: 47%; 
     float:left;
+
 }
 .form__child__element{
     display: flex; 
     justify-content:center;
+
+
     flex-wrap:wrap;
     padding-left: 10px;
 }
@@ -2968,9 +2971,22 @@ html.no-csstransitions .home-content__main {
 .form__child__element__text1{
     text-align:left; 
     margin-top:1.5%;
+
+}
+
+.form__child__element__animation{
+    width:100%; display:flex; justify-content:center;
+    padding-bottom: 50px;
+}
+
+#animation--container{
+    width:600px; 
+    height:600px;
+    text-align: center !important;
 }
 .form__child__element h2{
-    width:100% ; padding-left:10px;font-size:2.7rem; color:black;font-family:montserrat-medium;   
+    width:100% ; padding-left:10px;
+    font-size:2.2rem; color:black;font-family:montserrat-medium;   
 }
 
 .form__child2{
@@ -2992,19 +3008,42 @@ html.no-csstransitions .home-content__main {
     
    .form__child__element__icon{
         width:100%;
+        text-align: center;
+    }
+    .form__child2 .wrapper{
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+
+    }
+    .form__child__element__text2{
+        text-align: center !important;
+        width: 100%;
+    }
+
+
+    #animation--container{
+        width:400px; 
+        height:400px;
+        align-items: center;
+        text-align: center;
     }
     
 }
     
 .form__child__element__text2{
     text-align:left; 
+    font-size: 2.2rem
 }
 .form__child__element__text2 h2{
     width:100% ; padding-left:10px;
+    font-size: 2.2rem;
+
 }
 
 .form__child2 .wrapper{
-    display: flex; justify-content:center; align-items:center;flex-wrap:wrap;
+    display: flex; justify-content:left; align-items:left;flex-wrap:wrap;
+    margin-left: 14.8%;
+    padding-left: 40px;
 }
 .table__parent{
     width: 100% !important; background-color:#e6e6e6;
@@ -3057,7 +3096,7 @@ margin-bottom: 20px;
 /* 
 margin-right: 20px; 
 align-items: right; */
-margin-left: 9.2%;
+margin-left: 14.8%;
 text-align: left !important; 
 
 }
@@ -3070,7 +3109,7 @@ text-align: center !important;
 }
 .td2{
     background-color: white;
-    width: 82%;
+    width: 70%;
     height: 50px;
     /* margin-right: 20px; */
     /* padding-left: 20px; */
@@ -3760,6 +3799,7 @@ text-align: center !important;
     padding-top: 5rem;
     padding-bottom: 2rem;
     text-align: center;
+    text-transform:uppercase;
     font-family: 'montserrat-medium';
 }
 .help_text a {
