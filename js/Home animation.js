@@ -3085,7 +3085,7 @@ lib.properties = {
 	color: "#259CF4",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Home animation_atlas_1.png", id:"Home animation_atlas_1"}
+		{src:"assets/images/Home animation_atlas_1.png", id:"Home animation_atlas_1"}
 	],
 	preloads: []
 };

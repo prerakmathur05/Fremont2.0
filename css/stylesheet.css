@@ -11,9 +11,9 @@
 background-color: #e6e6e6 !important;
 }
 .view__table{
-	/* padding-left: 10px;
-	 padding-right: 10px;  */
-	 background-color: white;
+	padding-left: 10px;
+	 padding-right: 10px; 
+	 background-color: #e6e6e6;
 
 }
 

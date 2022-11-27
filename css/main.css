@@ -737,7 +737,7 @@ select:focus {
 
 label, legend {
     font-family: "montserrat-regular", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: .9rem;
     line-height: 1.714;
@@ -2004,7 +2004,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__line {
     display: block;
-    width: 2px;
     height: 10.2rem;
     background-color: white;
     position: absolute;
@@ -2943,8 +2942,10 @@ html.no-csstransitions .home-content__main {
     width: 80%;
     background-color:#e6e6e6;
     text-align: center;
+    padding-top: 2rem;
     padding-bottom: 10rem;
     overflow: scroll;
+
 }
 
 @media only screen and  (max-width:900px){
@@ -2970,7 +2971,6 @@ html.no-csstransitions .home-content__main {
 }
 .form__child__element__text1{
     text-align:left; 
-    margin-top:1.5%;
 
 }
 
@@ -2980,13 +2980,17 @@ html.no-csstransitions .home-content__main {
 }
 
 #animation--container{
-    width:600px; 
-    height:600px;
+    width:500px; 
+    height:500px;
     text-align: center !important;
 }
-.form__child__element h2{
+.form__child__element__text1 h2{
     width:100% ; padding-left:10px;
-    font-size:2.2rem; color:black;font-family:montserrat-medium;   
+    margin-top:8%;
+    text-align: left;
+font-weight: bold;
+
+    font-size:1.6rem; color:black;font-family:montserrat-medium;   
 }
 
 .form__child2{
@@ -3018,6 +3022,7 @@ html.no-csstransitions .home-content__main {
     .form__child__element__text2{
         text-align: center !important;
         width: 100%;
+
     }
 
 
@@ -3030,30 +3035,50 @@ html.no-csstransitions .home-content__main {
     
 }
     
-.form__child__element__text2{
+.form__child__element__text2,.form__child__element__text3 {
     text-align:left; 
-    font-size: 2.2rem
+    /* font-size: 2.2rem; */
 }
 .form__child__element__text2 h2{
-    width:100% ; padding-left:10px;
-    font-size: 2.2rem;
+    width:100% ;
+/* margin-top: 7.4%;  */
+    padding-left:10px;
+    font-size:1.6rem;
+    align-items: center;
+/* text-align: left; */
+font-weight: bold;
 
 }
+.form__child__element__text3 h2{
+    width:100% ;
+font-weight: bold;
+    padding-top: 2%;
+    padding-left:10px;
+    font-size: 1.6rem;
+text-align: left;
+align-items: center;
+
+}
+
 
 .form__child2 .wrapper{
     display: flex; justify-content:left; align-items:left;flex-wrap:wrap;
-    margin-left: 14.8%;
+    margin-left: 19.5%;
     padding-left: 40px;
 }
 .table__parent{
     width: 100% !important; background-color:#e6e6e6;
 }
 .table__contents{
-    display: flex; justify-content:space-evenly; align-items:center;flex-wrap:wrap;background-color:#e6e6e6;
+    display: flex; justify-content:space-evenly; 
+    align-items:center;
+    flex-wrap:wrap;background-color:#e6e6e6;
 
 }
 .table__contents__element1{
-    display: flex; justify-content:center; align-items:center;flex-wrap:wrap;
+    display: flex; justify-content:center; 
+    
+    flex-wrap:wrap;
 }
 
 
@@ -3086,17 +3111,18 @@ margin-bottom: 20px;
     .table__row{
         padding-left: 0;
      }
+     .calculate_btn{
+
+        padding-left:0;
+    }
+
      
  }
 
-/* .table__row input,p{
-    padding-bottom: 1rem !important;
-} */
+
 .td1{
-/* 
-margin-right: 20px; 
-align-items: right; */
-margin-left: 14.8%;
+
+margin-left: 19.8%;
 text-align: left !important; 
 
 }
@@ -3109,10 +3135,12 @@ text-align: center !important;
 }
 .td2{
     background-color: white;
-    width: 70%;
+    width: 60%;
     height: 50px;
-    /* margin-right: 20px; */
-    /* padding-left: 20px; */
+}
+.calculate_btn{
+    width:60%; 
+    padding-left:40px !important;
 }
 .form-input{
     width: 20vw;
