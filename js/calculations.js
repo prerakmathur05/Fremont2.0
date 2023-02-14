@@ -100,12 +100,11 @@ function changeButtonValue() // no ';' here
 
     else elem.value = "calculate";
 
-    var table= document.getElementById("the__table");
+    const table= document.getElementById("the__table");
     if (table.style.display==="none"){
-        table.style.display='block';
-        table.style.overflow='scroll';
-
-        
+        // table.style.display='block';
+        // table.style.overflow='auto';
+        table.style.setProperty('display', 'block');
     }
     else {table.style.display='none' 
     document.getElementById("unitPrice").value=""

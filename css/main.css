@@ -512,7 +512,7 @@ dl,
 form,
 .video-container,
 .cl-custom-select {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -2939,19 +2939,18 @@ html.no-csstransitions .home-content__main {
 
 }
 .form__child{
-    width: 80%;
+    width: 100%;
     background-color:#e6e6e6;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 10rem;
-    overflow: scroll;
+    overflow: auto;
 
 }
-
+/* 
 @media only screen and  (max-width:900px){
 .form__child{
     width:75%;
-}}
+}} */
 
 .form__child1{
     width: 47%; 
@@ -2968,6 +2967,8 @@ html.no-csstransitions .home-content__main {
 }
 .form__child__element__icon{
     color:#259cf4; font-size:5rem;
+    display: flex;
+    align-items: center;
 }
 .form__child__element__text1{
     text-align:left; 
@@ -2985,12 +2986,12 @@ html.no-csstransitions .home-content__main {
     text-align: center !important;
 }
 .form__child__element__text1 h2{
-    width:100% ; padding-left:10px;
+    width:100% ; padding-left:15px;
     margin-top:8%;
     text-align: left;
 font-weight: bold;
 
-    font-size:1.6rem; color:black;font-family:montserrat-medium;   
+    font-size:1.7rem; color:black;font-family:montserrat-medium;   
 }
 
 .form__child2{
@@ -3012,7 +3013,9 @@ font-weight: bold;
     
    .form__child__element__icon{
         width:100%;
-        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+
     }
     .form__child2 .wrapper{
         margin-left: 0 !important;
@@ -3020,8 +3023,14 @@ font-weight: bold;
 
     }
     .form__child__element__text2{
-        text-align: center !important;
         width: 100%;
+
+    }
+   .form__child h2{
+        text-align:center !important; 
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 1rem;
 
     }
 
@@ -3032,20 +3041,22 @@ font-weight: bold;
         align-items: center;
         text-align: center;
     }
-    
+
 }
     
 .form__child__element__text2,.form__child__element__text3 {
-    text-align:left; 
+    /* text-align:left !important;  */
     /* font-size: 2.2rem; */
-}
+    /* padding-top: 0;
+    margin-top: 0 !important;
+} */}
 .form__child__element__text2 h2{
     width:100% ;
 /* margin-top: 7.4%;  */
-    padding-left:10px;
-    font-size:1.6rem;
+    padding-left:15px;
+    font-size:1.7rem;
     align-items: center;
-/* text-align: left; */
+text-align: left;    
 font-weight: bold;
 
 }
@@ -3053,8 +3064,8 @@ font-weight: bold;
     width:100% ;
 font-weight: bold;
     padding-top: 2%;
-    padding-left:10px;
-    font-size: 1.6rem;
+    padding-left:15px;
+    font-size: 1.7rem;
 text-align: left;
 align-items: center;
 
@@ -3065,29 +3076,35 @@ align-items: center;
     display: flex; justify-content:left; align-items:left;flex-wrap:wrap;
     margin-left: 19.5%;
     padding-left: 40px;
+    margin-bottom: 20px;
 }
 .table__parent{
-    width: 100% !important; background-color:#e6e6e6;
+    width: 100% !important; 
+    background-color:#e6e6e6;
+    display: flex;
+    justify-content: center;
+    overflow: auto !important;
 }
-.table__contents{
-    display: flex; justify-content:space-evenly; 
-    align-items:center;
-    flex-wrap:wrap;background-color:#e6e6e6;
+/* 
+#the__table{
+    display:none;text-align:center;width:70%;padding:0 !important;margin: 0 !important; overflow:auto;
+} */
 
-}
+
 .table__contents__element1{
-    display: flex; justify-content:center; 
-    
+    display: flex; 
+    /* justify-content:left;  */
+    /* text-align: left; */
     flex-wrap:wrap;
 }
 
 
-.table__contents__element2{
-    text-align: right;
-}
 
-.table__contents__element2 p{
-    width:100% ; padding-left:10px; font-family:montserrat-medium;
+.form__child2 p{
+    width:100% ; 
+    padding-top: 20px;
+    padding-left:10px; font-family:montserrat-medium;
+    align-items: center;
 }
 
 
@@ -3102,7 +3119,8 @@ margin-bottom: 20px;
     /* display: block; */
     justify-content: center;
     padding-left: 40px;
-    padding-top: 10px;
+    /* padding-top: 20px; */
+    /* padding-top: 10px; */
 
 }
 
@@ -3136,6 +3154,7 @@ text-align: center !important;
 .td2{
     background-color: white;
     width: 60%;
+    padding-left: 10px;
     height: 50px;
 }
 .calculate_btn{
@@ -3269,12 +3288,12 @@ text-align: center !important;
 
 .clients-testimonials .testimonials .slick-prev {
     left: -130px;
-    background-image: url("../images/left-arrow.png");
+    background-image: url("../assets/images/left-arrow.png");
 }
 
 .clients-testimonials .testimonials .slick-next {
     right: -130px;
-    background-image: url("../images/right-arrow.png");
+    background-image: url("../assests/images/right-arrow.png");
 }
 
 .clients-testimonials .testimonials .slick-dots {
@@ -3823,14 +3842,18 @@ text-align: center !important;
     }
 }
 
-.help_text{
+.help__text{
+    width: 100%;
     padding-top: 5rem;
     padding-bottom: 2rem;
     text-align: center;
+    display: flex;
+    color: #000000;
+    justify-content: center;
     text-transform:uppercase;
     font-family: 'montserrat-medium';
 }
-.help_text a {
+.help__text a {
     text-decoration: none;
     color: #259CF4;
 }
@@ -3891,7 +3914,7 @@ footer .row {
     border: none;
     width: 220px;
     height: 30px;
-    background: url("../images/Logo-white-blue.png") no-repeat center;
+    background: url("../assets/images/Logo-white-blue.png") no-repeat center;
     background-size: 220px 30px;
     font: 0/0 a;
     text-shadow: none;
@@ -3920,8 +3943,11 @@ footer .row {
     width: 100%;
 }
 
+#mc-forms{
+    margin-bottom: 0 !important;
+}
 #mc-forms p{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.0rem;
     text-align: center;
@@ -3951,7 +3977,7 @@ footer .row {
     width: 100%;
     height: 5.4rem;
     padding: 1.2rem 160px 1.2rem 40px;
-    background: url(../images/email-icon.png) 0 center no-repeat, rgba(0, 0, 0, 0.1);
+    background: url(../assets/images/email-icon.png) 0 center no-repeat, rgba(0, 0, 0, 0.1);
     background-size: 24px 16px, auto;
     border: none;
     margin-bottom: 1.8rem;
@@ -4144,6 +4170,11 @@ footer .row {
         padding-left: 0;
     }
 }
-
+ .swal-class button{
+    background-color: #259CF4 !important;
+    text-align: center !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+ }
 
 /*# sourceMappingURL=main.css.map */
