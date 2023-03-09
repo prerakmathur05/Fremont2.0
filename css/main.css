@@ -59,7 +59,7 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+ html {
     font-size: 10px;
 }
 
@@ -4178,5 +4178,35 @@ footer .row {
     align-items: center !important;
     padding: 0 15px !important;
  }
+ 
+ .inputWrapper label{
+    margin-right: 27%;
+    font-size: 1.25rem;
+ }
+
+ .inputWrapper input{
+    width: 32%;
+    block-size: 40px;
+ }
+
+ .btngrouping {
+    display: inline-block;
+  }
+  .btngrouping > input[type=radio] {
+    height: 24px;
+    width: 98px;
+  }
+  .business-btns {
+    display: block;
+  }
+  .business-btns label {
+    font-size: 1.25rem;
+    display: flex;
+    width: 20px;
+    margin-inline: 20px;
+  }
+  .submit_btn {
+    width: 31%;
+  }
 
 /*# sourceMappingURL=main.css.map */
