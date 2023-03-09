@@ -2944,6 +2944,7 @@ html.no-csstransitions .home-content__main {
     text-align: center;
     padding-top: 2rem;
     overflow: auto;
+    padding-bottom: 30px;
 
 }
 /* 
@@ -3082,6 +3083,7 @@ align-items: center;
     width: 100% !important; 
     background-color:#e6e6e6;
     display: flex;
+    padding: 0;
     justify-content: center;
     overflow: auto !important;
 }
@@ -3844,7 +3846,7 @@ text-align: center !important;
 
 .help__text{
     width: 100%;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     padding-bottom: 2rem;
     text-align: center;
     display: flex;
