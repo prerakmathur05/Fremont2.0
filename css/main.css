@@ -58,7 +58,7 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+ html {
   font-size: 10px;
 }
 
@@ -1413,6 +1413,10 @@ input::-moz-focus-inner {
   display: inline-block;
   text-align: center;
 }
+
+.display-AboutUs{
+  font-size: 50px;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * display headings
@@ -2630,6 +2634,14 @@ html.no-csstransitions .home-content__main {
   margin-top: -0.6rem;
 }
 
+.services-list .service-iconAboutUS {
+  float: left;
+  color: #259cf4;
+
+  font-size: 3.5rem;
+  margin-top: -0.6rem;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
@@ -3687,6 +3699,12 @@ html.no-csstransitions .home-content__main {
   color: #259cf4 !important;
 }
 
+.white {
+  text-decoration: none;
+  color: #b1d8f3 !important;
+  margin: 0;
+}
+
 .black {
   text-decoration: none;
   color: #000000 !important;
@@ -3882,6 +3900,12 @@ html.no-csstransitions .home-content__main {
 .help__text a {
   text-decoration: none;
   color: #259cf4;
+}
+.helpText{
+  font-weight: 500;
+  color: #4d4c4c;
+  font-size: medium;
+  margin: 0;
 }
 /* ===================================================================
  * # footer
@@ -4225,6 +4249,10 @@ footer .row {
   display: flex;
   width: 20px;
   margin-inline: 20px;
+}
+.btnsDirection {
+  text-align: left;
+  margin-left: 30%;
 }
 .submit_btn {
   width: 31%;

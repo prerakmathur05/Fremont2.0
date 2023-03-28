@@ -439,15 +439,12 @@ textarea {
     margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
-=======
 .rowAboutUs {
-    width: 79%; 
+    width:79%; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
->>>>>>> Stashed changes
 .row:after {
     content: "";
     display: table;
