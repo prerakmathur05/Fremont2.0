@@ -439,6 +439,12 @@ textarea {
     margin: 0 auto;
 }
 
+.rowAboutUs {
+    width:79%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .row:after {
     content: "";
     display: table;
