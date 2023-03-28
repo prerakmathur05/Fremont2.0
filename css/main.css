@@ -3692,6 +3692,11 @@ html.no-csstransitions .home-content__main {
   color: #000000 !important;
 }
 
+.whiteText {
+  color: #f6f7f8 !important;
+}
+
+
 /* .blue:hover{
     color: white;
 } */
