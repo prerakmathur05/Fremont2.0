@@ -70,7 +70,7 @@
     <link rel="icon" href="/assets/images/favicons/favicon.ico" type="image/x-icon">
     <!-- for animation -->
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="js/Home animation.js"></script>
+
 
     <style>
         #animation_container,
@@ -112,52 +112,51 @@
     <script src="https://kit.fontawesome.com/f7b8eff6d1.js" crossorigin="anonymous"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script src="js/Home animation.js"></script>
-
     <script>
         var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas");
             anim_container = document.getElementById("animation_container");
             dom_overlay_container = document.getElementById("dom_overlay_container");
-            var comp = AdobeAn.getComposition("3F7B7FC76D434B7FB64DA32DCD5CCA12");
-            var lib = comp.getLibrary();
+            var comp=AdobeAn.getComposition("3F7B7FC76D434B7FB64DA32DCD5CCA12");
+            var lib=comp.getLibrary();
             var loader = new createjs.LoadQueue(false);
-            loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
-            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-            var lib = comp.getLibrary();
+            loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+            loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+            var lib=comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
         }
         function handleFileLoad(evt, comp) {
-            var images = comp.getImages();
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+            var images=comp.getImages();	
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
         }
-        function handleComplete(evt, comp) {
+        function handleComplete(evt,comp) {
             //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
+            var lib=comp.getLibrary();
+            var ss=comp.getSpriteSheet();
             var queue = evt.target;
             var ssMetadata = lib.ssMetadata;
-            for (i = 0; i < ssMetadata.length; i++) {
-                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            for(i=0; i<ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
             }
             var preloaderDiv = document.getElementById("_preload_div_");
             preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.Homeanimation();
             stage = new lib.Stage(canvas);
-            stage.enableMouseOver();
+            stage.enableMouseOver();	
             //Registers the "tick" event listener.
-            fnStartAnimation = function () {
+            fnStartAnimation = function() {
                 stage.addChild(exportRoot);
                 createjs.Ticker.framerate = lib.properties.fps;
                 createjs.Ticker.addEventListener("tick", stage);
-            }
+            }	    
             //Code to support hidpi screens and responsive scaling.
-            AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, preloaderDiv, anim_container, dom_overlay_container]);
+            AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
             AdobeAn.compositionLoaded(lib.properties.id);
             fnStartAnimation();
         }
-    </script>
+        </script>
 </head>
 
 <body id="top" onload="init();">
@@ -236,18 +235,14 @@
         <!-- <div class="overlay"></div> -->
 
         <!-- <div class="shadow-overlay"></div> -->
-        <div id="animation_container" style="background-color:rgba(37, 156, 244, 1.00); width:1009px; height:750px">
-            <canvas id="canvas" width="1009" height="750"
-                style="position: absolute; display: none; background-color:rgba(37, 156, 244, 1.00);"></canvas>
-            <div id="dom_overlay_container"
-                style="pointer-events:none; overflow:hidden; width:1009px; height:750px; position: absolute; left: 0px; top: 0px; display: none;">
+
+        <div id="animation_container" style="background-color:rgba(37, 156, 244, 1.00); width:850px; height:730px">
+            <canvas id="canvas" width="850" height="730" style="position: absolute; display: none; background-color:rgba(37, 156, 244, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:850px; height:730px; position: absolute; left: 0px; top: 0px; display: none;">
             </div>
         </div>
-        <div id='_preload_div_'
-            style='position:absolute; top:0; left:0; display: inline-block; height:750px; width: 1009px; text-align: center;'>
-            <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> <img
-                src=images/_preloader.gif style='vertical-align: middle; max-height: 100%' />
-        </div>
+        <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:730px; width: 850px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=assets/images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+    
 
 
 
@@ -258,20 +253,30 @@
     <!-- clients
     ================================================== -->
     <section id='about' class="s-services">
-
+        <div style="background-color: #259cf4; width:100%">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <!-- <h3 class="subhead">What We Do</h3> -->
-                <h1 class="display-1 display-AboutUs">About Us
+                <h1 class="display-1 display-AboutUs ">About Us
                 </h1> 
             </div>
+            <p class="whiteText about-desc ">
+                <span>
 
+                    We study company and industry location strategy, <br>
+                    and provide tools and assistance to help companies <br>
+                    
+                    grow, expand and scale.
+                </span>
+
+            </p>
 
         </div> <!-- end section-header -->
+
+    </div>
         <div class="row section-header" data-aos="fade-up">
 
             <h2 style="margin-top: 0;">Proximity Lab Board </h2>
-        </div>
         </div>
         <div class="row rowAboutUs services-list block-1-2 block-tab-full">
 

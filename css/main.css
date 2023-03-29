@@ -58,7 +58,7 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
- html {
+html {
   font-size: 10px;
 }
 
@@ -1414,7 +1414,7 @@ input::-moz-focus-inner {
   text-align: center;
 }
 
-.display-AboutUs{
+.display-AboutUs {
   font-size: 50px;
 }
 /* ------------------------------------------------------------------- 
@@ -2438,6 +2438,8 @@ html.no-csstransitions .home-content__main {
   line-height: 1.75;
   text-align: center;
   max-width: 1024px;
+  font-family: "montserrat-light", sans-serif;
+  padding-top: 10%;
 }
 
 .image {
@@ -2592,7 +2594,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 5.2rem;
+  /* padding-top: 5.2rem; */
   padding-bottom: 13.2rem;
   background-color: #ffffff;
   color: #757575;
@@ -3714,7 +3716,6 @@ html.no-csstransitions .home-content__main {
   color: #f6f7f8 !important;
 }
 
-
 /* .blue:hover{
     color: white;
 } */
@@ -3901,7 +3902,7 @@ html.no-csstransitions .home-content__main {
   text-decoration: none;
   color: #259cf4;
 }
-.helpText{
+.helpText {
   font-weight: 500;
   color: #4d4c4c;
   font-size: medium;
