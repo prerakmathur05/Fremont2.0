@@ -440,9 +440,10 @@ textarea {
 }
 
 .rowAboutUs {
-    width:79%; 
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 60%; 	
+    max-width: 1200px;	
+    margin: 0 auto;	
+    margin-right: 17%;
 }
 
 .row:after {
