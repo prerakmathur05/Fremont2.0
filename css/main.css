@@ -2607,7 +2607,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .services-list .service-item {
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.9rem; 
 }
 
 .services-list .service-item h3 {
@@ -3907,6 +3907,9 @@ html.no-csstransitions .home-content__main {
   font-size: medium;
   margin: 0;
 }
+.contactUsModule{
+  margin-top: 9rem;
+}
 /* ===================================================================
  * # footer
  *
@@ -4236,6 +4239,7 @@ footer .row {
 
 .btngrouping {
   display: inline-block;
+  margin-left: 18px;
 }
 .btngrouping > input[type="radio"] {
   height: 24px;
@@ -4248,14 +4252,17 @@ footer .row {
   font-size: 1.25rem;
   display: flex;
   width: 20px;
-  margin-inline: 20px;
+  margin-inline: 38px;
+  white-space: nowrap;
 }
 .btnsDirection {
   text-align: left;
-  margin-left: 30%;
+  margin-left: 26rem;
 }
 .submit_btn {
   width: 31%;
 }
-
+.contactUS_bottom{
+  padding-bottom: 13rem;
+}
 /*# sourceMappingURL=main.css.map */
