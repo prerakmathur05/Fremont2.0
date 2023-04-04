@@ -4266,14 +4266,4 @@ footer .row {
 .contactUS_bottom{
   padding-bottom: 13rem;
 }
-/*********************************************************************
-* # Contact Us Section
-*
-* ------------------------------------------------------------------- */
-
-@media only screen and (max-width: 800px) {
-  .contact-Us {
-    margin-left: 25%!important;
-  } 
-}
 /*# sourceMappingURL=main.css.map */
